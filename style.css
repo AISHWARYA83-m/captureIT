@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+   
+}
+p
+{
+    width: 100%;
+    position: absolute;
+    top:30px;
+    left:80px;
+    color: white;
+    font-size: 15px;
+    /* margin-top: 30px; */
+    /* font-family: 'Roboto Mono', monospace; */
+     font-family: 'Cedarville Cursive', cursive;
+     
+}
+.main_box
+{ 
+    /* background:url("photo.jpg");height: 400px;width: 100%; */
+     font-family: "Poppins", sans-serif;
+      background-image: url(photo.jpg);
+      height: 100vh;
+      background-size: cover;
+
+}
+.btn_one i
+{
+    font-size: 20px;
+    font-weight: 70px;
+    position: absolute;
+    left:10px;
+    line-height: 30px;
+    /* width: 100%; */
+    cursor:pointer;
+    transition: all 0.3s linear;
+    
+}
+.sidebar_menu
+{
+    position:fixed;
+    /* left:-100px; */
+    height: 100vh;
+    width: 300px;
+     left:-350px;
+    /* color: white; */
+    background-color: rgb(255,255,255,0.1);
+        box-shadow: 0 0 6px rgb(255, 255, 255, 0.5);
+        transition: all 0.3s linear 0.3s;
+}
+.sidebar_menu .logo {
+    position: absolute;
+    /* font-family: "Roboto", sans-serif; */
+     /* font-family: "Roboto", sans-serif;*/
+  font-family: 'Roboto Mono', monospace;
+    width: 100%;
+    height: 60px;
+    line-height: 30px;
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.5);
+}
+
+.sidebar_menu .logo a{
+    position: absolute;
+    left:50px;
+    width:100%;
+    color: white;
+   
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:500px;
+     font-family: 'Roboto Mono', monospace; 
+}
+.sidebar_menu .btn_two i
+{
+    color: grey;
+    font-size:20px;
+    line-height:60px;
+    position: absolute;
+    left: 275px;
+    cursor:pointer;
+    /* opacity: 0; */
+    /* opacity applied for whole the cross mark so its not visible*/
+}
+.sidebar_menu .menu{
+   color: white;
+   position: absolute;
+   width: 100%;
+    top: 70px;
+  
+}
+
+.sidebar_menu .menu li
+{
+    margin-top: 5px;
+    padding: 9px 23px
+   /* box-shadow: 0 0 2px rgb(255, 255, 255, 0.5); */
+}
+.sidebar_menu .menu i,a
+{
+    color: white;
+    margin-top:6px;
+    text-decoration: none;
+    font-size: 15px;
+     /* margin: 0 8px;   */ 
+}
+.sidebar_menu .menu i
+{
+   padding-right:8px;
+}
+.sidebar_menu .social_media 
+{
+    font-size: 18px;
+    color: white;
+    margin-top: 450px;
+    margin-left: 70px;
+}
+#check
+{
+    display: none;
+} 
+.sidebar_menu .social_media i{
+    padding: 0.9px;
+    opacity: 0.5;
+    margin: 2px;
+
+}
+
+/* hover */
+
+.sidebar_menu .menu li:hover
+{
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.2);
+}
+.sidebar_menu .btn_one i:hover{
+    font-size: 40px;
+}
+.sidebar_menu .btn_two i:hover{
+    font-size: 30px;
+}
+.sidebar_menu .social_media i:hover
+{
+    opacity: 1;
+    transform: scale(1.2);
+}
+#check:checked ~.sidebar_menu
+{
+    left: 0;
+}
+
+#check:checked ~ .btn_one i
+{
+    opacity: 0;
+}
+
+#check:checked ~.sidebar_menu .btn_two i
+{
+    opacity: 1;
+}

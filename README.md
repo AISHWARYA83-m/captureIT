@@ -1,0 +1,1 @@
+This project is a photography webpage created using HTML and CSS. It provides an elegant platform for photographers to showcase their work, capture moments, and organize their image collections in a visually appealing way. The design focuses on simplicity and aesthetics, making it easy to navigate while highlighting the beauty of the photographs.
